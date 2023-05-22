@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .question {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+    
+    .question a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    .question p {
+      margin-top: 5px;
+      color: #666;
+    }
+    
+    .solution {
+      margin-top: 10px;
+    }
+    
+    .solution img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Solved Questions</h1>
+
+  <%for(let i=1;i<=countt;i++){%>
+  <div class="question">
+    <a id="qLink" href=<%= qLink[i-1] %>>Question</a>
+    <p id="Comment">Comment:<%= qComment[i-1] %></p>
+    <div class="solution">
+      <img src="./pictures/quesNumber<%=i%>.jpg" alt="Solution Photo">
+    </div>
+  </div>
+<%}%>
+  <!-- Add more question divs as needed -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>practice data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .question {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .question h2 {
+      margin-top: 0;
+    }
+
+    .question p {
+      margin-bottom: 0;
+    }
+
+    .solution {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Solved Question</h1>
+
+  <!-- Form to add a new question -->
+  <form method="POST" id="questionForm" action="/addData">
+    <input name="qLink" type="text" id="questionLink" placeholder="Question Link" required>
+    <textarea name="qComment" id="questionComment" placeholder="Add a comment about the question" ></textarea>
+    <input name="qImage" type="file" value="Take Photo" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  
+</body>
+</html>
